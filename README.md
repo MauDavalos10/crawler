@@ -8,19 +8,19 @@ The interviewer asked to develop a web crawler to extract and filter the first 3
 
 **Decision:**
 
-Language and Runtime:
+**Language and Runtime:**
 
 Use TypeScript with Node.js
 Argument: TypeScript provides static typing, improving code quality and maintainability. Node.js offers a rich ecosystem for web scraping and database operations.
 
 
-Web Scraping Library:
+**Web Scraping Library:**
 
 Use Puppeteer
 Argument: Puppeteer provides a high-level API to control Chrome/Chromium, allowing for robust scraping of dynamic content. It's particularly useful for sites that may require JavaScript execution.
 
 
-Database:
+**Database:**
 
 Use SQLite
 Argument: SQLite requires zero configuration, and is suitable for applications that don't need a separate database server. It's perfect for our use case of storing crawler results and usage data locally.
