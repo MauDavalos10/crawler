@@ -77,17 +77,18 @@ class HackerNewsCrawler {
   }
 
   private async saveEntries(entries: HackerNewsEntry[]): Promise<void> {
-    const stmt = await this.db.prepare(
+    const statement = await this.db.prepare(
       "INSERT INTO entries (number, title, points, comments) VALUES (?, ?, ?, ?)",
     );
     for (const entry of entries) {
-      await stmt.run(entry.number, entry.title, entry.points, entry.comments);
+      await statement.run(
+        entry.number,
+        entry.title,
+        entry.points,
+        entry.comments,
+      );
     }
-    await stmt.finalize();
-  }
-
-  private countWords(title: string): number {
-    return title.split(/\s+/).filter((word) => word.length > 0).length;
+    await statement.finalize();
   }
 
   async filterEntries(filter: "long" | "short"): Promise<HackerNewsEntry[]> {
