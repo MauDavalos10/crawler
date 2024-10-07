@@ -1,0 +1,20 @@
+# Dependency directories
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional npm cache directory
+.npm
+
+.idea/
+.DS_Store
+
+# Generated DB
+hacker_news.db
+
+package-lock.json
