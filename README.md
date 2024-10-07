@@ -1,15 +1,15 @@
->Hacker News Crawler
+**Hacker News Crawler**
 This project extracts and filters the first 30 inputs of Hacker News website
 
->Requirements
+**Requirements**
 Node.js (v14 or superior)
 
->Installation
+**Installation**
 - Clone this repo.
 - Run npm install to install dependencies
 
 
->Core Features
+**Core Features**
 - Extract the first 30 inputs of Hacker News website.
 - Filter inputs with more than 5 words in the title, sorted by number of comments.
 - Filter inputs with 5 or less words in the title, sorted by points.
