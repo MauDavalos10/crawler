@@ -4,9 +4,3 @@ export interface HackerNewsEntry {
   points: number;
   comments: number;
 }
-
-export interface UsageData {
-  timestamp: string;
-  filter_applied: string;
-  execution_time: number;
-}

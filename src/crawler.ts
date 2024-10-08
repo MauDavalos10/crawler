@@ -1,7 +1,7 @@
 import puppeteer, { Browser, Page } from "puppeteer";
 import sqlite3 from "sqlite3";
 import { open, Database } from "sqlite";
-import { HackerNewsEntry, UsageData } from "./types";
+import { HackerNewsEntry } from "./types";
 
 class HackerNewsCrawler {
   private url: string;
